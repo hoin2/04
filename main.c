@@ -3,17 +3,21 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 int main(int argc, char*argv[]){	
-	int i;
+	unsigned int x;
+	int b;
 	
-	printf("input the year:");
-	scanf("%d",&i);
+	printf("input a number:");
+	scanf("%ui",&x);
 	
-	if (i%4==0&&i%100!=0||i%400==0){
-		printf("%d is leep year!\n",i);
+	for (b=0;x!=0;x>>=1){
+		if(x&1)
+		{
+			b++;
+		}
 	}
-	else{
-		printf("%d is not leep year!\n",i);
-	}
-
+	
+	printf("The result is:%i\n",b);
+	
 	return 0;
+
 }
