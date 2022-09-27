@@ -2,20 +2,24 @@
 #include <stdlib.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
-int main(int argc, char *argv[]) {
-	int x,y,z,m;
-	int a,b,c;
-	x=1;
-	y=3;
-	z=5;
-	a=3;
-	b=4;
-	c=5;
+int main(int argc, char*argv[]){	
+	int i,j;
+	int A,B,C,D,E;
 	
-	y=a*x^+b*x+c;
-	m=(x+y+z)/3;
+	printf("input two integers:");
+	scanf("%d,%d",&i,&j);
 	
-	printf("y=%d,m=%d",y,m);
+	A=i+j;
+	B=i-j;
+	C=i*j;
+	D=i/j;
+	E=i%j;
+	
+	printf("+ result is %d\n",A);
+	printf("- result is %d\n",B);
+	printf("* result is %d\n",C);
+	printf("/ result is %d\n",D);
+	printf("%% result is %d\n",E);
 	
 	return 0;
 }
