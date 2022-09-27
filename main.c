@@ -3,23 +3,15 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 int main(int argc, char*argv[]){	
-	int i,j;
-	int A,B,C,D,E;
+	int i,j,k;
 	
-	printf("input two integers:");
-	scanf("%d,%d",&i,&j);
+	printf("input the second:");
+	scanf("%d",&i);
 	
-	A=i+j;
-	B=i-j;
-	C=i*j;
-	D=i/j;
-	E=i%j;
+	j=i/60;
+	k=i%60;
 	
-	printf("+ result is %d\n",A);
-	printf("- result is %d\n",B);
-	printf("* result is %d\n",C);
-	printf("/ result is %d\n",D);
-	printf("%% result is %d\n",E);
+	printf("the time is %d:%d",j,k);
 	
 	return 0;
 }
